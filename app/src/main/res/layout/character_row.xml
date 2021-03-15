@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -18,22 +19,25 @@
             android:layout_height="50dp">
 
             <TextView
+                android:id="@+id/name_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Name"
-                android:gravity="center"
+                android:text="@string/name"
+                android:gravity="start"
                 android:textSize="18sp"
                 android:textColor="@color/black"
-                android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"/>
+                android:layout_toStartOf="@+id/name"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="end"
                 android:textSize="18sp"
+                android:text="@string/example"
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
@@ -49,10 +53,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Height"
-                android:gravity="center"
+                android:text="@string/height"
+                android:gravity="start"
                 android:textSize="18sp"
                 android:textColor="@color/black"
+                android:layout_toStartOf="@+id/height_character"
                 android:layout_centerVertical="true"
                 android:layout_alignParentStart="true"/>
 
@@ -61,6 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:text="@string/example"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
@@ -77,20 +83,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Mass"
-                android:gravity="center"
+                android:text="@string/mass"
+                android:gravity="start"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/mass"/>
 
             <TextView
                 android:id="@+id/mass"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="end"
                 android:textSize="18sp"
                 android:textColor="@color/black"
+                android:text="@string/example"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"/>
@@ -105,20 +113,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Hair color"
-                android:gravity="center"
+                android:text="@string/hair_color"
+                android:gravity="start"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/hair_color"/>
 
             <TextView
                 android:id="@+id/hair_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="end"
                 android:textSize="18sp"
                 android:textColor="@color/black"
+                android:text="@string/example"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"/>
@@ -133,23 +143,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Birth year"
-                android:gravity="center"
+                android:text="@string/birth_year"
+                android:gravity="start"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/birth_year"/>
 
             <TextView
                 android:id="@+id/birth_year"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="end"
                 android:textSize="18sp"
                 android:textColor="@color/black"
+                android:text="@string/example"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true" />
 
         </RelativeLayout>
 
@@ -161,28 +173,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Gender"
-                android:gravity="center"
+                android:text="@string/gender"
+                android:gravity="start"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/gender"/>
 
             <TextView
                 android:id="@+id/gender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="end"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                android:text="@string/example"/>
 
         </RelativeLayout>
-
-        <!--,
-    , ,  -->
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -192,20 +203,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginStart="10dp"
-                android:text="Number of films"
-                android:gravity="center"
+                android:text="@string/number_of_films"
+                android:gravity="start"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/number_of_films"/>
 
             <TextView
                 android:id="@+id/number_of_films"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="end"
                 android:textSize="18sp"
                 android:textColor="@color/black"
+                android:text="@string/example"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"/>
@@ -220,20 +233,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginStart="10dp"
-                android:text="Number of species"
-                android:gravity="center"
+                android:text="@string/number_of_species"
+                android:gravity="start"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/number_of_species"/>
 
             <TextView
                 android:id="@+id/number_of_species"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="end"
                 android:textSize="18sp"
                 android:textColor="@color/black"
+                android:text="@string/example"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"/>
@@ -249,20 +264,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:layout_marginStart="10dp"
-                android:text="Number of starships displayed"
-                android:gravity="center"
+                android:text="@string/number_of_starships_displayed"
+                android:gravity="start"
                 android:textSize="18sp"
                 android:textColor="@color/black"
                 android:layout_centerVertical="true"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/number_of_starships"/>
 
             <TextView
                 android:id="@+id/number_of_starships"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:gravity="end"
                 android:textSize="18sp"
                 android:textColor="@color/black"
+                android:text="@string/example"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"/>

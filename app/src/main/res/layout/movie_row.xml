@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -23,7 +24,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Title"
+                android:text="@string/title"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:textColor="@color/black"
@@ -39,7 +40,8 @@
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
 
         </RelativeLayout>
 
@@ -51,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Episode Id"
+                android:text="@string/episode_id"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:textColor="@color/black"
@@ -67,7 +69,8 @@
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
 
         </RelativeLayout>
 
@@ -79,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Director"
+                android:text="@string/director"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:textColor="@color/black"
@@ -95,7 +98,8 @@
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
 
         </RelativeLayout>
 
@@ -107,7 +111,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Producer"
+                android:text="@string/producer"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:textColor="@color/black"
@@ -123,7 +127,8 @@
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
 
         </RelativeLayout>
 
@@ -135,7 +140,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Release Date"
+                android:text="@string/release_date"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:textColor="@color/black"
@@ -151,7 +156,8 @@
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
 
         </RelativeLayout>
 
@@ -163,7 +169,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="Number of characters"
+                android:text="@string/number_of_characters"
                 android:gravity="center"
                 android:textSize="18sp"
                 android:textColor="@color/black"
@@ -179,7 +185,8 @@
                 android:textColor="@color/black"
                 android:layout_marginEnd="10dp"
                 android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"/>
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
 
         </RelativeLayout>
 
@@ -192,7 +199,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_marginStart="10dp"
-                android:text="Opening Crawl : "
+                android:text="@string/opening_crawl"
                 android:background="@android:color/darker_gray"
                 android:gravity="center"
                 android:textSize="18sp"
@@ -209,7 +216,6 @@
                 android:layout_margin="10dp"
                 android:layout_below="@id/opening"
                 android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
                 android:maxLines="3"/>
 
         </RelativeLayout>

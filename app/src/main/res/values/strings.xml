@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">HomeView</string>
+    <string name="name">Name</string>
+    <string name="height">Height</string>
+    <string name="mass">Mass</string>
+    <string name="hair_color">Hair color</string>
+    <string name="birth_year">Birth year</string>
+    <string name="gender">Gender</string>
+    <string name="number_of_films">Number of films</string>
+    <string name="number_of_species">Number of species</string>
+    <string name="number_of_starships_displayed">Number of starships displayed</string>
+    <string name="oooo">oooo</string>
+    <string name="example">example</string>
+    <string name="title">Title</string>
+    <string name="episode_id">Episode Id</string>
+    <string name="director">Director</string>
+    <string name="producer">Producer</string>
+    <string name="release_date">Release Date</string>
+    <string name="number_of_characters">Number of characters</string>
+    <string name="opening_crawl">Opening Crawl :</string>
 </resources>
