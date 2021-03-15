@@ -26,7 +26,8 @@
             android:textSize="18sp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/characters"
@@ -38,7 +39,8 @@
             android:textSize="18sp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"
+            tools:ignore="ButtonStyle" />
 
     </LinearLayout>
 
