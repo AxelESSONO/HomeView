@@ -74,9 +74,14 @@ class MoviesActivity : AppCompatActivity() {
 
         private fun parseJSonFilm(json: String) {
 
+            // 1 - Convertir en JSON
             val jsonObject = JSONObject(json)
+
+            // 2 - Recuperer le tableau results de JSON
             val jsonArray = jsonObject.getJSONArray("results")
-            val movieItems = ArrayList<Movie>()
+
+            // 3 - List de films
+            val movieList = ArrayList<Movie>()
 
             for (i in 0 until jsonArray.length()){
 
@@ -135,10 +140,11 @@ class MoviesActivity : AppCompatActivity() {
                     characters, episode_id, planets,
                     release_date, starships, species, producer
                 )
-                movieItems?.add(movieItem)
+
+                movieList?.add(movieItem)
             }
 
-            val adapter = MovieListAdapter(this@MoviesActivity, movieItems)
+            val adapter = MovieListAdapter(this@MoviesActivity, movieList)
             listView.adapter = adapter
         }
     }

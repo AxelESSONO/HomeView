@@ -13,8 +13,7 @@ class MovieListAdapter(val context: Context, val listMovie: ArrayList<Movie>): B
 {
 
     private val MAX_LINES_COLLAPSED = 3
-    private val INITIAL_IS_COLLAPSED = true
-    private var isCollapsed = INITIAL_IS_COLLAPSED
+    private var isCollapsed = true
 
     override fun getCount(): Int {
         return listMovie.size
@@ -29,6 +28,7 @@ class MovieListAdapter(val context: Context, val listMovie: ArrayList<Movie>): B
     }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
+
         val view : View = LayoutInflater.from(context).inflate(R.layout.movie_row, parent, false)
 
         /** Bind View */
@@ -40,13 +40,18 @@ class MovieListAdapter(val context: Context, val listMovie: ArrayList<Movie>): B
         val numberCharacters : TextView = view.findViewById(R.id.number_of_characters)
         val openingCrawl : TextView = view.findViewById(R.id.opening_crawl)
 
-        title.text = listMovie[position].title
-        episodeId.text = listMovie[position].episode_id.toString()
-        director.text = listMovie[position].director
-        producer.text = listMovie[position].producer
-        release_date.text = listMovie[position].release_date
-        numberCharacters.text = listMovie[position].characters?.size.toString()
-        openingCrawl.text = listMovie[position].opening_crawl
+        val movie : Movie = listMovie[position]
+
+        title.text = movie.title
+        episodeId.text = movie.episode_id.toString()
+        director.text = movie.director
+        producer.text = movie.producer
+        release_date.text = movie.release_date
+        //numberCharacters.text = movie.characters?.size.toString()
+
+        numberCharacters.text = "${movie.characters?.size}"
+
+        openingCrawl.text = movie.opening_crawl
 
         openingCrawl.setOnClickListener {
             if (isCollapsed) {
@@ -54,7 +59,7 @@ class MovieListAdapter(val context: Context, val listMovie: ArrayList<Movie>): B
             } else {
                 openingCrawl.setMaxLines(MAX_LINES_COLLAPSED)
             }
-            isCollapsed = !isCollapsed;
+            isCollapsed = !isCollapsed
         }
 
         return view
